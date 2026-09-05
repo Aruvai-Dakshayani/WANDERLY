@@ -1,0 +1,692 @@
+.home {
+  width: 100%;
+}
+
+.hero {
+  min-height: 650px;
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url("https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1800&q=80");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-content {
+  max-width: 1200px;
+  width: 100%;
+
+  margin: 0 auto;
+
+  padding: 80px 24px;
+
+  color: white;
+}
+
+.hero-subtitle {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  max-width: 700px;
+
+  font-size: 64px;
+  line-height: 1.1;
+
+  margin-bottom: 25px;
+}
+
+.hero h1 span {
+  display: block;
+}
+
+.hero-description {
+  max-width: 550px;
+
+  font-size: 18px;
+  line-height: 1.7;
+
+  margin-bottom: 35px;
+}
+
+.hero-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 24px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #ff7043;
+  color: white;
+
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.hero-button:hover {
+  background: #e85d32;
+  transform: translateY(-2px);
+}
+
+.hero-button:hover {
+  transform: translateY(-2px);
+  background: #e85a28;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+  .hero {
+    min-height: 600px;
+  }
+
+  .hero-content {
+    padding: 60px 20px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+}
+/* =========================
+   SEARCH SECTION
+========================= */
+
+.search-section {
+  width: 100%;
+  padding: 0 24px;
+  position: relative;
+  margin-top: -45px;
+  z-index: 10;
+}
+
+.search-container {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  background: white;
+
+  border-radius: 14px;
+
+  padding: 22px 24px;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+}
+
+.search-item {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  color: #ff6b35;
+}
+
+.search-item div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.search-item label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+}
+
+.search-item input {
+  width: 100%;
+
+  border: none;
+  outline: none;
+
+  font-size: 14px;
+  color: #555;
+
+  background: transparent;
+}
+
+.search-item input::placeholder {
+  color: #999;
+}
+
+.search-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  border: none;
+  border-radius: 9px;
+
+  padding: 14px 24px;
+
+  background: #ff6b35;
+  color: white;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+
+  transition: 0.3s;
+}
+
+.search-button:hover {
+  background: #e85a28;
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   SEARCH RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .search-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-item {
+    width: 100%;
+  }
+
+  .search-button {
+    width: 100%;
+  }
+}
+/* =========================
+   POPULAR DESTINATIONS
+========================= */
+
+.destinations-section {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  padding: 90px 24px 70px;
+}
+
+.section-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  margin-bottom: 40px;
+}
+
+.section-subtitle {
+  color: #ff6b35;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 10px;
+}
+
+.section-header h2 {
+  font-size: 38px;
+  color: #222;
+
+  margin-bottom: 12px;
+}
+
+.section-description {
+  max-width: 600px;
+
+  color: #777;
+
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.view-all-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 22px;
+
+  border: 1px solid #ff7043;
+  border-radius: 10px;
+
+  background: transparent;
+  color: #ff7043;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.view-all-button:hover {
+  background: #ff7043;
+  color: white;
+}
+
+.view-all-button:hover {
+  background: #ff6b35;
+  color: white;
+}
+
+.destinations-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+  .destinations-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .destinations-section {
+    padding: 70px 20px 50px;
+  }
+
+  .section-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .section-header h2 {
+    font-size: 30px;
+  }
+
+  .destinations-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+/* =========================
+   POPULAR PACKAGES
+========================= */
+
+.packages-section {
+  background: #f8f9fa;
+
+  padding: 90px 24px;
+}
+
+.packages-section .section-header,
+.packages-grid {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.packages-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+  .packages-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .packages-section {
+    padding: 70px 20px;
+  }
+
+  .packages-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+/* =========================
+   WHY CHOOSE WANDERLY
+========================= */
+
+.features-section {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 90px 24px;
+}
+
+.features-header {
+  margin-bottom: 45px;
+}
+
+.features-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 22px;
+}
+
+
+/* Tablet */
+
+@media (max-width: 1000px) {
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .features-section {
+    padding: 70px 20px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+/* =========================
+   CUSTOMER REVIEWS
+========================= */
+
+.reviews-section {
+  background: #f8f9fa;
+
+  padding: 90px 24px;
+}
+
+.reviews-section .section-header {
+  max-width: 1200px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reviews-grid {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+  .reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .reviews-section {
+    padding: 70px 20px;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+/* =========================================
+   STEP 16 — CALL TO ACTION
+========================================= */
+
+.cta-section {
+  position: relative;
+
+  min-height: 400px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 70px 25px;
+
+  overflow: hidden;
+
+  background-image:
+    url("../../assets/images/hero/wanderly-hero.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cta-section::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.52);
+}
+
+.cta-content {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 800px;
+
+  text-align: center;
+
+  color: white;
+}
+
+.cta-small-title {
+  margin: 0 0 12px;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  color: #ff9f43;
+}
+
+.cta-content h2 {
+  margin: 0 0 18px;
+
+  font-size: clamp(35px, 5vw, 58px);
+
+  line-height: 1.1;
+
+  font-weight: 800;
+
+  color: white;
+}
+
+.cta-content > p:not(.cta-small-title) {
+  max-width: 650px;
+
+  margin: 0 auto 30px;
+
+  font-size: 17px;
+
+  line-height: 1.6;
+
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 24px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #ff7043;
+  color: white;
+
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.cta-button:hover {
+  background: #e85d32;
+  transform: translateY(-2px);
+}
+
+.cta-button:hover {
+  background: #e96800;
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .cta-section {
+    min-height: 430px;
+
+    padding: 60px 20px;
+  }
+
+  .cta-content h2 {
+    font-size: 36px;
+  }
+
+  .cta-content > p:not(.cta-small-title) {
+    font-size: 15px;
+  }
+
+  .cta-button {
+    width: 100%;
+
+    max-width: 280px;
+  }
+
+}
+/* =========================================
+   FINAL MOBILE SAFETY
+========================================= */
+
+@media (max-width: 600px) {
+
+  .home {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .hero-section,
+  .destinations-section,
+  .packages-section,
+  .why-section,
+  .reviews-section,
+  .cta-section {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .section-container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .destination-card,
+  .package-card,
+  .review-card,
+  .why-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+}

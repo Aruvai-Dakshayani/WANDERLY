@@ -1,0 +1,93 @@
+.review-card {
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 14px;
+
+  border: 1px solid #eeeeee;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Stars */
+
+.review-stars {
+  display: flex;
+
+  gap: 4px;
+
+  color: #f5a623;
+
+  margin-bottom: 20px;
+}
+
+
+/* Review */
+
+.review-text {
+  color: #555;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+
+  min-height: 80px;
+
+  margin-bottom: 25px;
+}
+
+
+/* User */
+
+.review-user {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+.review-avatar {
+  width: 45px;
+  height: 45px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #fff1eb;
+
+  color: #ff6b35;
+
+  font-weight: 700;
+
+  font-size: 18px;
+}
+
+.review-user h4 {
+  color: #222;
+
+  font-size: 15px;
+
+  margin-bottom: 3px;
+}
+
+.review-user p {
+  color: #888;
+
+  font-size: 13px;
+
+  margin: 0;
+}
